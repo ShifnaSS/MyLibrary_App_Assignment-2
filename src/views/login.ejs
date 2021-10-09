@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="/css/styles.css"> -->
+</head>
+<body>
+    
+    <div class="flip-container login" >
+         
+        <div class="flipper login-form" id="flipper">  
+            <!-- <img alt="" src="/images/<%=image1.img1%>">  -->
+            <div class="front">
+                <h1 class="title">Login</h1>
+                <form class="login1" id="login-index" method="get" action="/index">
+                    <input type="text" placeholder="Username" id="username"/><br>
+                    <input type="password" placeholder="Password" id="password"/>
+                    <br>
+                    <button class="bt" type="submit" onclick="return valid();">Login</button>
+                </form>
+                <br><button class="orange flipbutton" id="loginButton">SignUp →</button>
+            </div>
+            
+            <div class="back">
+                <h1 class="title">SignUp</h1><br>
+               <form  class="signup" id="signup-index" action="/index" method="GET">
+                    <input type="text" placeholder="Enter Username" id="user"/>
+                    <input type="text" placeholder="Enter Mobile Number" id="phone"/>
+                    <input type="text" placeholder="Enter Email-ID" id="email"/>
+                    <input type="password" placeholder="Create Password" id="pass1"/>
+                    <input type="password" placeholder="Confirm Password" id="pass2"/>
+                    <br>
+                    <button class="bt" type="submit" onclick="return validSignup();">SignUp</button>
+                </form><br>
+                <button class="orange flipbutton" id="registerButton">Login→</button>
+            </div>
+        </div>
+        </div>
+        <!-- <script src="login.js"></script> -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+        <script src="js/login.js"></script>
+</body>
+</html>
